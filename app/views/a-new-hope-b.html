@@ -1,0 +1,104 @@
+{% extends "layout.html" %}
+
+{% set productName = "Star Wars" %}
+
+{% set homepage_url = "" %}
+
+{% set phase = "beta" %}
+
+{% set section = "original-trilogy" %}
+
+{# Product nav URLs and link text #}
+{% set navItems = [
+  
+  ['index', 'About'],
+  ['original-trilogy', 'Original trilogy'],
+  ['new-films', 'New films'],
+  ['characters', 'Characters'],
+  ['spacecraft', 'Spacecraft'],
+  ['planets', 'Planets and moons'],
+  ['droids', 'Droids'],
+  ['darkside', 'Darkside vs Lightside']
+] %}
+
+{% block content %}
+
+
+<main id="content" role="main">
+
+
+
+<script>
+
+function changeClass() {
+    document.getElementById("subnav").className += " is-open";
+    document.getElementById("subnav-trigger").className += " is-open";
+}
+
+
+window.onload = function() {
+    document.getElementById("subnav-trigger").addEventListener( 'click' , changeClass );
+}
+
+
+
+</script>
+
+
+<div class="breadcrumbs">
+  <ol>
+    <li>
+        <a href="original-trilogy">Original trilogy</a>
+    </li>
+    <li>
+        <a href="a-new-hope-b">Episode IV - A New Hope</a>
+    </li>
+    <li class="active">
+        Overview
+    </li>
+  </ol>
+</div>
+
+<h1 class="heading-xlarge">Episode IV – A new hope</h1>
+
+<a id="subnav-trigger" src="#subnav">View all sections</a>
+
+<div class="grid-row">
+
+  <div class="column-one-third">
+    <nav id="subnav" class="subnav">
+      <ul>
+            <div class="mobile-only">
+              <li><a href="original-trilogy.html"><img class="pointer-left" src="/public/images/separator-2x.png">Original Trilogy</a></li>
+              <li class="active"><a href="a-new-hope.html">Episode IV - A New Hope</a></li>
+            </div>
+            <li><a href="plot.html">Plot</a></li>
+            <li><a href="cast.html">Cast</a></li>
+            <li><a href="production.html">Production</a></li>
+
+      </ul>
+    </nav> 
+  </div>
+
+  <div class="column-two-thirds">
+
+
+    <p id="overview" class="lede mt_0">Star Wars (later retitled Star Wars: Episode IV – A New Hope) is a 1977 American epic space opera film written and directed by George Lucas. The first installment in the original Star Wars trilogy, it stars Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing, and Alec Guinness. David Prowse, James Earl Jones, Anthony Daniels, Kenny Baker and Peter Mayhew co-star in supporting roles.</p>
+
+    <p><a href="a-new-hope.html">Single page</a> The plot focuses on the Rebel Alliance, led by Princess Leia (Fisher), and its attempt to destroy the Galactic Empire's space station, the Death Star. This conflict disrupts the isolated life of farmhand Luke Skywalker (Hamill) who inadvertently acquires a pair of droids that possess stolen architectural plans for the Death Star. When the Empire begins a destructive search for the missing droids, Skywalker accompanies Jedi Master Obi-Wan Kenobi (Guinness) on a mission to return the plans to the Rebel Alliance and rescue Leia from her imprisonment by the Empire.</p>
+
+    <p>Star Wars was released theatrically in the United States on May 25, 1977. It earned $461 million in the U.S. and $314 million overseas, totaling $775 million. It surpassed Jaws (1975) to become the highest-grossing film of all time, until the release of E.T. the Extra-Terrestrial (1982). When adjusted for inflation, Star Wars is the second-highest-grossing film in North America, and the third-highest-grossing film in the world. The film received ten Academy Award nominations (including Best Picture), winning seven. It was selected in 1989 to become part of the U.S. Library of Congress' National Film Registry as being "culturally, historically, or aesthetically significant", and the film's soundtrack was added to the U.S. National Recording Registry in 2004. Today, it is often regarded as one of the best films of all time, as well as one of the most important films in the history of motion pictures. It also launched an industry of media tie-in products, including TV series spinoffs, novels, comic books, and video games, as well as various other merchandise, such as toys, games, clothing, and other paraphernalia.</p>
+
+    <p>The film's massive success led to the production of two sequels: The Empire Strikes Back (1980) and Return of the Jedi (1983), both of which became critically and commercially successful. Since 1977, Star Wars was subsequently reissued multiple times at Lucas' behest, incorporating many changes including modified computer-generated effects, altered dialogue, re-edited shots, remixed soundtracks, and added scenes. A prequel trilogy was released between 1999 and 2005, followed by a sequel trilogy beginning in 2015. In 2016, a standalone film based on the events that immediately led to the story of the original trilogy was released.</p>
+
+    
+
+  </div>
+
+</div>
+  
+</main>
+
+{% endblock %}
+
+

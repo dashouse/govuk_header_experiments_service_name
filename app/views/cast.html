@@ -1,0 +1,156 @@
+{% extends "layout.html" %}
+
+{% set productName = "Star Wars" %}
+
+{% set homepage_url = "" %}
+
+{% set phase = "beta" %}
+
+{% set section = "original-trilogy" %}
+
+{# Product nav URLs and link text #}
+{% set navItems = [
+  
+  ['index', 'About'],
+  ['original-trilogy', 'Original trilogy'],
+  ['new-films', 'New films'],
+  ['characters', 'Characters'],
+  ['spacecraft', 'Spacecraft'],
+  ['planets', 'Planets and moons'],
+  ['droids', 'Droids'],
+  ['darkside', 'Darkside vs Lightside']
+] %}
+
+{% block content %}
+
+
+<main id="content" role="main">
+
+
+
+<script>
+
+function changeClass() {
+    document.getElementById("subnav").className += " is-open";
+    document.getElementById("subnav-trigger").className += " is-open";
+}
+
+
+window.onload = function() {
+    document.getElementById("subnav-trigger").addEventListener( 'click' , changeClass );
+}
+
+
+
+</script>
+
+
+<div class="breadcrumbs">
+  <ol>
+    <li>
+        <a href="original-trilogy">Original trilogy</a>
+    </li>
+    <li>
+        <a href="a-new-hope-b">Episode IV - A New Hope</a>
+    </li>
+    <li class="active">
+        Cast
+    </li>
+  </ol>
+</div>
+
+<h1 class="heading-xlarge">Episode IV – A new hope</h1>
+
+<a id="subnav-trigger" src="#subnav">View all sections</a>
+
+<div class="grid-row">
+
+  <div class="column-one-third">
+    <nav id="subnav" class="subnav">
+      <ul>
+            <div class="mobile-only">
+              <li><a href="original-trilogy.html"><img class="pointer-left" src="/public/images/separator-2x.png">Original Trilogy</a></li>
+              <li><a href="a-new-hope-b.html"><img class="pointer-left" src="/public/images/separator-2x.png">Episode IV - A New Hope</a></li>
+            </div>
+            <li><a href="plot.html">Plot</a></li>
+            <li class="active"><a href="cast.html">Cast</a></li>
+            <li><a href="production.html">Production</a></li>
+
+      </ul>
+    </nav> 
+  </div>
+
+  <div class="column-two-thirds">
+
+
+    <h2 id="cast" class="heading-large mt_0">Cast</h2>
+
+    <h3 class="heading-small">Mark Hamill as Luke Skywalker</h3>
+
+    <p>A young man raised by his aunt and uncle on Tatooine, who dreams of something more than his current life and learns the way of a Jedi.
+    Lucas favored casting young actors who lacked long experience. To play Luke (then known as Luke Starkiller), Lucas sought actors who could project intelligence and integrity. While reading for the character, Hamill found the dialogue to be extremely odd because of its universe-embedded concepts. He chose to simply read it sincerely, and he was selected instead of William Katt, who was subsequently cast in the Brian De Palma-directed Carrie (Lucas shared a joint casting session with De Palma, a longtime friend).</p>
+
+
+    <h3 class="heading-small">Carrie Fisher as Princess Leia</h3>
+
+    <p>A member of the Imperial Senate and leader of the Rebel Alliance.
+    Many young actresses in Hollywood auditioned for the role of Princess Leia, including Amy Irving,[12] Terri Nunn (also a singer), Cindy Williams,[11] Karen Allen,[12] and Jodie Foster. Foster, for one, turned down the role because she was already under contract with Disney and working on two films at the time.[13] Carrie Fisher was cast under the condition that she lose 10 pounds for the role.</p>
+
+    <h3 class="heading-small">Harrison Ford as Han Solo</h3> 
+
+    <p>A cynical smuggler hired by Obi-Wan and Luke to take them to Alderaan in his ship, the Millennium Falcon, co-piloted with Chewbacca.
+    Lucas initially rejected casting Ford for the role, as he "wanted new faces"; Ford had previously worked with the director on American Graffiti. Instead, Lucas asked the actor to assist in the auditions by reading lines with the other actors and explaining the concepts and history behind the scenes that they were reading. Lucas was eventually won over by Ford's portrayal and cast him instead of Kurt Russell, Nick Nolte,[12] Sylvester Stallone,[15] Bill Murray,[16][17] Christopher Walken, Burt Reynolds, Jack Nicholson, Al Pacino, Steve Martin, Chevy Chase, Billy Dee Williams (who later played Lando Calrissian in the sequels), or Perry King (who later played Han Solo in the radio plays).</p>
+
+
+    <h3 class="heading-small">Peter Cushing as Grand Moff Tarkin</h3> 
+
+    <p>Governor of the Imperial Outland Regions and commander of the Death Star.
+    Lucas originally had Cushing in mind for the role of Obi-Wan Kenobi, but Lucas believed that "his lean features" would be better employed in the role of Grand Moff Tarkin instead. Lucas commended Cushing's performance, saying "[He] is a very good actor. Adored and idolized by young people and by people who go to see a certain kind of movie. I feel he will be fondly remembered for the next 350 years at least." Cushing, commenting on his role, joked: "I've often wondered what a 'Grand Moff' was. It sounds like something that flew out of a cupboard."</p>
+
+
+    <h3 class="heading-small">Alec Guinness as Obi-Wan "Ben" Kenobi</h3> 
+
+    <p>An aging Jedi Master who fought during the Clone Wars, survivor of the Great Jedi Purge, and who introduces Luke to the Force.
+    Lucas's decision to cast "unknowns" was not taken favorably by his friend Francis Ford Coppola and the studio. Lucas needed an established actor to play the important Obi-Wan Kenobi character. Producer Gary Kurtz said, "The Alec Guinness role required a certain stability and gravitas as a character... which meant we needed a very, very strong character actor to play that part."[11] Before Guinness was cast, Japanese actor Toshiro Mifune (who starred in Akira Kurosawa's The Hidden Fortress) was considered for the role.[12][20] According to Mifune's daughter, Mika Kitagawa, her father turned down Lucas' offer for the role of both Kenobi and Darth Vader because "he was concerned about how the film would look and that it would cheapen the image of samurai... At the time, sci-fi movies still looked quite cheap as the effects were not advanced and he had a lot of samurai pride."[21] Guinness was one of the few cast members who believed that the film would be successful; he negotiated a deal for 2% of the one-fifth gross royalties paid to George Lucas, which made him quite wealthy in later life. He agreed to take the part of Kenobi on the condition that he would not have to do any publicity to promote the film.[22] Lucas credited him with inspiring the cast and crew to work harder, saying that Guinness contributed significantly to the completion of the filming.[23] Harrison Ford said, "It was, for me, fascinating to watch Alec Guinness. He was always prepared, always professional, always very kind to the other actors. He had a very clear head about how to serve the story."</p>
+
+
+    <h3 class="heading-small">Anthony Daniels as C-3PO</h3> 
+
+    <p>A protocol droid who speaks over six million languages.
+    Daniels auditioned for and was cast as C-3PO; he has said that he wanted the role after he saw a Ralph McQuarrie drawing of the character and was struck by the vulnerability in the robot's face.[11][24] Initially, Lucas did not intend to use Daniels' voice for C-3PO. Thirty well-established voice actors read for the voice of the droid. According to Daniels, one of the major voice actors, believed by some sources to be Stan Freberg, recommended Daniels's voice for the role.</p>
+
+
+    <h3 class="heading-small">Kenny Baker as R2-D2</h3> 
+
+    <p>An astromech droid who is carrying the Death Star plans and a secret message for Obi-Wan from Princess Leia.
+    While Lucas was filming in London, where additional casting took place, Baker, performing a musical comedy act with his acting partner Jack Purvis, learned that the film crew was looking for a small person to fit inside a robot suit and maneuver it; Baker, who is 3 feet 8 inches (1.12 m) tall, was cast immediately after meeting George Lucas. He said, "He saw me come in and said 'He'll do' because I was the smallest guy they'd seen up until then." He initially turned down the role three times, hesitant to appear in a film where his face would not be shown and hoping to continue the success of his comedy act, which had recently started to be televised.[26] R2-D2's recognizable beeps and squeaks were made by sound designer Ben Burtt and Lucas imitating "baby noises", recording these voices as they were heard on an intercom, and creating the final mix using a synthesizer.</p>
+
+
+    <h3 class="heading-small">Peter Mayhew as Chewbacca</h3> 
+
+    <p>a 200-year-old Wookiee, Han Solo's sidekick, and first mate of the Millennium Falcon.
+    Mayhew learned of a casting call for Star Wars, which was filming in London, and decided to audition. The 7 feet 3 inches (2.21 m) tall actor was immediately cast as Chewbacca after he stood up to greet Lucas.[11][27] He said, "I sat down on one of the sofas, waiting for George. Door opened, and George walked in with Gary behind him. So, naturally, what did I do? I'm raised in England. Soon as someone comes in through the door, I stand up. George goes 'Hmm [looked up].' Virtually turned to Gary, and said 'I think we've found him.'"[11] He was actually eligible for either of the two roles: Chewbacca or Darth Vader. He chose the former because he wanted to play a hero; British actor David Prowse took the other.[27] Mayhew modeled his performance of Chewbacca after the mannerisms of animals he saw at public zoos.</p>
+
+
+    <h3 class="heading-small">David Prowse as Darth Vader (voiced by James Earl Jones)</h3> 
+
+    <p>A Sith lord, second in command of the Galactic Empire, who hopes to destroy the Rebel Alliance.
+    Lucas originally intended for Orson Welles to voice Vader (after dismissing using Prowse's own voice due to his English West Country accent, leading to the rest of the cast nicknaming him "Darth Farmer").[7] After deciding that Welles' voice would be too recognizable, he cast the lesser-known James Earl Jones instead.</p>
+
+    <p>Other actors include Phil Brown and Shelagh Fraser, respectively, as Owen and Beru, Luke's uncle and aunt; Jack Purvis, Kenny Baker's partner in his London comedy act, as the Chief Jawa in the film; Eddie Byrne as Vanden Willard, a Rebel general; Denis Lawson and Garrick Hagon as rebel pilots Wedge Antilles and Biggs Darklighter (Luke's childhood friend), respectively; and Don Henderson and Leslie Schofield as Imperial Generals Cassio Tagge and Moradmin Bast, respectively. Richard LeParmentier plays an admiral, named Conan Antonio Motti, who dares mock Darth Vader's faith in the force and his failure to locate the rebel base and the stolen Death Star plans, and is nearly force choked to death by Vader, only saved by Tarkin intervening and ordering Vader to release him. Michael Leader plays a minor role as a Stormtrooper known for accidentally walking into a door.</p>   
+
+
+
+
+
+
+
+  </div>
+
+</div>
+  
+</main>
+
+{% endblock %}
+
+

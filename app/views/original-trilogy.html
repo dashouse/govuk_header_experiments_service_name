@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+
+{% set productName = "Star Wars" %}
+
+{% set homepage_url = "" %}
+
+{% set phase = "beta" %}
+
+{% set section = "original-trilogy" %}
+
+{# Product nav URLs and link text #}
+{% set navItems = [
+  
+  ['index', 'About'],
+  ['original-trilogy', 'Original trilogy'],
+  ['new-films', 'New films'],
+  ['characters', 'Characters'],
+  ['spacecraft', 'Spacecraft'],
+  ['planets', 'Planets and moons'],
+  ['droids', 'Droids'],
+  ['darkside', 'Darkside vs Lightside']
+] %}
+
+{% block content %}
+
+
+<main id="content" role="main">
+
+<h1 class="heading-xlarge">Original trilogy</h1>
+
+<script>
+
+function changeClass() {
+    document.getElementById("subnav").className += " is-open";
+    document.getElementById("subnav-trigger").className += " is-open";
+}
+
+
+window.onload = function() {
+    document.getElementById("subnav-trigger").addEventListener( 'click' , changeClass );
+}
+
+
+
+</script>
+
+<a id="subnav-trigger" src="#subnav">View the films</a>
+
+<div class="grid-row">
+
+  <div class="column-one-third">
+    <nav id="subnav" class="subnav">
+      <ul>
+        <li><a href="a-new-hope.html">Episode IV – A New Hope</a></li>
+        <li><a href="#">Episode V – The Empire Strikes Back</a></li>
+        <li><a href="#">Episode VI – Return of the Jedi</a></li>
+      </ul>
+    </nav> 
+  </div>
+
+  <div class="column-two-thirds">
+
+    
+
+    <p class="lede">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum mollis ipsum, ac euismod diam blandit eu. Vivamus at consectetur massa. Duis dapibus massa a libero vehicula tristique. Fusce in nunc rhoncus, gravida risus a, blandit nisl. Cum sociis natoque penatibus et magnis dis parturient montes..</p>
+
+    <p>Maecenas nec posuere risus. Curabitur ac mi volutpat, fermentum est id, blandit purus. Mauris bibendum diam sed leo congue iaculis. Sed gravida neque lobortis est tempus pharetra. Pellentesque ac turpis quis tortor rutrum varius. Aliquam sed diam tincidunt, gravida ante ac, auctor sem. Sed nunc tellus, auctor fermentum luctus vel, accumsan eget nunc. Nullam sagittis massa mauris, eget aliquet nulla dictum eu. Nam accumsan aliquam libero ac dictum. Sed posuere dapibus vehicula. Vestibulum egestas, massa sit amet suscipit tincidunt, tortor mauris cursus lacus, non dignissim nulla metus ut sapien. Nunc non tellus pulvinar, vehicula dui vel, faucibus tellus.</p>
+
+<!-- 	<h2 class="heading-medium">This is another heading</h2>
+
+	<p>Maecenas nec posuere risus. Curabitur ac mi volutpat, fermentum est id, blandit purus. Mauris bibendum diam sed leo congue iaculis. Sed gravida neque lobortis est tempus pharetra. Pellentesque ac turpis quis tortor rutrum varius. Aliquam sed diam tincidunt, gravida ante ac, auctor sem. Sed nunc tellus, auctor fermentum luctus vel, accumsan eget nunc. Nullam sagittis massa mauris, eget aliquet nulla dictum eu. Nam accumsan aliquam libero ac dictum. Sed posuere dapibus vehicula. Vestibulum egestas, massa sit amet suscipit tincidunt, tortor mauris cursus lacus, non dignissim nulla metus ut sapien. Nunc non tellus pulvinar, vehicula dui vel, faucibus tellus.</p>
+
+	<h2 class="heading-medium">This is another heading</h2>
+
+	<p>Maecenas nec posuere risus. Curabitur ac mi volutpat, fermentum est id, blandit purus. Mauris bibendum diam sed leo congue iaculis. Sed gravida neque lobortis est tempus pharetra. Pellentesque ac turpis quis tortor rutrum varius. Aliquam sed diam tincidunt, gravida ante ac, auctor sem. Sed nunc tellus, auctor fermentum luctus vel, accumsan eget nunc. Nullam sagittis massa mauris, eget aliquet nulla dictum eu. Nam accumsan aliquam libero ac dictum. Sed posuere dapibus vehicula. Vestibulum egestas, massa sit amet suscipit tincidunt, tortor mauris cursus lacus, non dignissim nulla metus ut sapien. Nunc non tellus pulvinar, vehicula dui vel, faucibus tellus.</p>
+
+	<h2 class="heading-medium">This is another heading</h2>
+
+	<p>Maecenas nec posuere risus. Curabitur ac mi volutpat, fermentum est id, blandit purus. Mauris bibendum diam sed leo congue iaculis. Sed gravida neque lobortis est tempus pharetra. Pellentesque ac turpis quis tortor rutrum varius. Aliquam sed diam tincidunt, gravida ante ac, auctor sem. Sed nunc tellus, auctor fermentum luctus vel, accumsan eget nunc. Nullam sagittis massa mauris, eget aliquet nulla dictum eu. Nam accumsan aliquam libero ac dictum. Sed posuere dapibus vehicula. Vestibulum egestas, massa sit amet suscipit tincidunt, tortor mauris cursus lacus, non dignissim nulla metus ut sapien. Nunc non tellus pulvinar, vehicula dui vel, faucibus tellus.</p>	 -->
+
+  </div>
+
+</div>
+  
+</main>
+
+{% endblock %}
+
+

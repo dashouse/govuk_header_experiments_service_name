@@ -1,0 +1,58 @@
+
+{% macro headerNav(homepage_url, navItems, section) %}
+
+<div class="header-proposition">
+      <div class="content">
+        <a href="#footer-nav" class="menu">Menu</a>
+        <nav id="proposition-menu">
+          <ul id="proposition-links" class="">
+
+            {% for href, title in navItems %}
+              <li><a {% if href == section %}class="active"{% endif %} href="{% if not 'http' in href %}{{ homepage_url }}{% endif %}{{ href }}">{{ title }}</a></li>
+            {% endfor %}
+
+          </ul>
+        </nav>
+      </div>
+
+</div>
+
+{% endmacro %}
+
+
+
+{% macro footerNav(homepage_url, navItems, section) %}
+
+<div id="footer-nav" class="footer-proposition">
+
+      <div class="content">
+
+        <h2 class="">Product or service</h2>
+
+        <nav>
+          <ul class="">
+
+            {% for href, title in navItems %}
+              <li><a {% if href == section %}class="active"{% endif %} href="{% if not 'http' in href %}{{ homepage_url }}{% endif %}{{ href }}">{{ title }}</a></li>
+            {% endfor %}
+
+          </ul>
+        </nav>
+      </div>
+
+</div>
+
+{% endmacro %}
+
+{% macro productName(name, phase) %}
+
+  {% if name %}<div class="product-name"><a href="#">{{ name }}</a></div>{% endif %}
+  {% if phase %}<div class="phase-banner">{{ phase }}</div>{% endif %}
+
+{% endmacro %}
+
+{% macro serviceName(name, phase) %}
+<div class="service-name-wrapper">
+  {% if name %}<div class="service-name"><a href="#">{{ name }}</a>{% if phase %}<div class="phase-banner">{{ phase }}</div>{% endif %}</div>{% endif %}
+</div>
+{% endmacro %}
