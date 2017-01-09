@@ -51,8 +51,9 @@
 
 {% endmacro %}
 
-{% macro serviceName(name, phase) %}
+{% macro serviceName(name, phase, login) %}
 <div class="service-name-wrapper">
-  {% if name %}<div class="service-name"><a href="#">{{ name }}</a>{% if phase %}<div class="phase-banner">{{ phase }}</div>{% endif %}</div>{% endif %}
+  {% if name %}<div class="service-name"><a href="#">{{ name }}</a>{% if phase %}<div class="phase-banner">{{ phase }}</div>{% endif %}{% if login %}<div class="login"><a href="#"><div class="icn"><img src="/public/images/icn-person.png"></div>{{ login }}</a></div>{% endif %}</div>{% endif %}
+
 </div>
 {% endmacro %}
