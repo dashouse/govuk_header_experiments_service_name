@@ -1,4 +1,4 @@
-{% extends "layout-header-navigation.html" %}
+{% extends "layout.html" %}
 
 {% set productName = "Product Name" %}
 
@@ -16,7 +16,8 @@
   ['index', 'Home'],
   ['index-product-name', 'Product name'],
   ['index-service-name', 'Service name'],
-  ['index-header-navigation', 'L1 and L2 navigation'],
+  ['index-header-navigation', 'L1 navigation'],
+  ['index-header-sub-navigation', 'L1 and L2 navigation'],
   ['index-service-name-header-navigation', 'Service name and header navigation'],
   ['index-everything', 'Everything']
   
@@ -34,6 +35,15 @@
     <h1 class="heading-xlarge">A long time ago in a galaxy far, far away...</h1>
 
     <p class="lede">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum mollis ipsum, ac euismod diam blandit eu. Vivamus at consectetur massa. Duis dapibus massa a libero vehicula tristique. Fusce in nunc rhoncus, gravida risus a, blandit nisl. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vulputate placerat turpis, vel fringilla mauris viverra nec. Curabitur porttitor, dui et sagittis interdum.</p>
+
+    <ul>
+      <li><a href="index-product-name.html">Header with product name</a></li>
+      <li><a href="index-service-name.html">Header with service name</a></li>
+      <li><a href="index-header-navigation.html">Header with L1 navigation</a></li>
+      <li><a href="index-header-sub-navigation.html">Header with L1 and L2 navigation</a></li>
+      <li><a href="index-service-name-header-navigation.html">Header with Service name and navigation</a></li>
+      <li><a href="index-service-name-header-navigation.html">Header with everything</a></li>
+    </ul>
 
 	<h2 class="heading-large">This is another heading</h2>
 
