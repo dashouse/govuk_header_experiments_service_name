@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "layout-header-navigation.html" %}
 
 {% set productName = "Star Wars" %}
 
@@ -6,19 +6,19 @@
 
 {% set phase = "beta" %}
 
-{% set section = "original-trilogy" %}
+{% set section = "index-header-sub-navigation" %}
 
 {# Product nav URLs and link text #}
 {% set navItems = [
   
-  ['index', 'About'],
-  ['original-trilogy', 'Original trilogy'],
-  ['new-films', 'New films'],
-  ['characters', 'Characters'],
-  ['spacecraft', 'Spacecraft'],
-  ['planets', 'Planets and moons'],
-  ['droids', 'Droids'],
-  ['darkside', 'Darkside vs Lightside']
+  ['index', 'Home'],
+  ['index-product-name', 'Product name'],
+  ['index-service-name', 'Service name'],
+  ['index-header-navigation', 'L1 navigation'],
+  ['index-header-sub-navigation', 'L1 and L2 navigation'],
+  ['index-service-name-header-navigation', 'Service name and L1 navigation'],
+  ['index-everything', 'Everything']
+  
 ] %}
 
 {% block content %}
@@ -48,10 +48,10 @@ window.onload = function() {
 <div class="breadcrumbs">
   <ol>
     <li>
-        <a href="original-trilogy">Original trilogy</a>
+        <a href="#">Original trilogy</a>
     </li>
     <li>
-        <a href="a-new-hope-b">Episode IV - A New Hope</a>
+        <a href="index-header-sub-navigation.html">Episode IV - A New Hope</a>
     </li>
     <li class="active">
         Plot
