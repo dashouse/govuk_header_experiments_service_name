@@ -97,10 +97,14 @@
         clear: right;
         margin-top: 15px;
         width: 100%;
-      }
+      } 
 
     } 
 }
+
+.service-name-wrapper + .header-proposition > .content {
+    padding-top: 0px;
+} 
 
 .service-name {
     @extend %contain-floats;
@@ -136,7 +140,6 @@
       }
 
     }
-
 
     .phase-banner {
       
@@ -184,7 +187,7 @@
 .header-proposition {
   
   @extend %contain-floats;
-  background-color: $grey-3;
+  background-color: white;
 
 
   .content {
